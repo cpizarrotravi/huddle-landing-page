@@ -1,19 +1,31 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: hsl(229, 6%, 66%);
+    font-size: 24px;
+    color: white;
     background-color: hsl(257, 40%, 49%);
     background-image: url('../images/bg-desktop.svg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.illustration {
+.illustration img {
     width: 100%;
 }
 
 .title {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 36px;
+    float: left;
+}
+
+.body {
+    float: left;
+}
+
+.btn-align {
+    float: left;
 }
 
 .btn-circle {
@@ -26,16 +38,66 @@ body {
     line-height: 1.42857;
 }
 
+.social-icons {
+    float: right;
+}
+
 /*MEDIA*/
 
 @media screen and (max-width: 375px) {
     body {
         background-image: url('../images/bg-mobile.svg');
     }
+    .title {
+        font-size: 24px;
+        text-align: center;
+        float: none;
+    }
+    .body {
+        font-size: 16px;
+        text-align: center;
+        float: none;
+    }
     .logo img {
         width: 200px;
+    }
+    .illustration {
+        width: 100%;
     }
     .illustration img {
         width: 300px;
     }
+    .btn-align {
+        text-align: center;
+        float: none;
+    }
+    .social-icons {
+        text-align: center;
+        float: none;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {}
+
+/*Small devices (landscape phones, less than 768px)*/
+
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+    .title {
+        font-size: 20px;
+    }
+    .body {
+        font-size: 14px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+
+@media (max-width: 1199.98px) {
+    
 }
